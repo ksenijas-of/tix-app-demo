@@ -52,6 +52,14 @@ For end-to-end (e2e) testing, run:
 ng e2e
 ```
 
+## Backend
+
+For the backend, you need to go to the backend folder and run the command to start the node.js application. This is where the OpenAI integration lives. You will also need to create a .env file and add a secret key for the OpenAI aplication:
+
+```bash
+npm start
+```
+
 Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
 ## Additional Resources
