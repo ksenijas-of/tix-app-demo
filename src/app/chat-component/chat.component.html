@@ -1,0 +1,18 @@
+<div class="chat-container">
+  <h2>Chat with AI</h2>
+
+  <textarea
+    [(ngModel)]="userInput"
+    rows="5"
+    placeholder="Type your message..."
+  ></textarea>
+
+  <button (click)="sendMessage()" [disabled]="isLoading">
+    {{ isLoading ? 'Sending...' : 'Send' }}
+  </button>
+
+  <div class="response" *ngIf="response">
+    <strong>AI Response:</strong>
+    <p>{{ response }}</p>
+  </div>
+</div>
